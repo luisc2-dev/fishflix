@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Deep Sea Secrets",
+    "image": "1.png",
+    "rating": 2,
+    "genre": "Adventure"
+  },
+  {
+    "id": 2,
+    "title": "Coral Conundrum",
+    "image": "2.png",
+    "rating": 3,
+    "genre": "Adventure"
+  },
+  {
+    "id": 3,
+    "title": "The Dark Depths",
+    "image": "3.png",
+    "rating": 4,
+    "genre": "Horror"
+  },
+  {
+    "id": 4,
+    "title": "Aquatic Enigma",
+    "image": "4.png",
+    "rating": 5,
+    "genre": "Adventure"
+  },
+  {
+    "id": 5,
+    "title": "Deep Sea Secrets 2",
+    "image": "5.png",
+    "rating": 6,
+    "genre": "Adventure"
+  },
+  {
+    "id": 6,
+    "title": "Ocean's Whisper",
+    "image": "6.png",
+    "rating": 7,
+    "genre": "Adventure"
+  },
+  {
+    "id": 7,
+    "title": "Finn & Fern",
+    "image": "7.png",
+    "rating": 8,
+    "genre": "Comedy"
+  },
+  {
+    "id": 8,
+    "title": "Goldy-Locks Adventures",
+    "image": "8.png",
+    "rating": 9,
+    "genre": "Adventure"
+  },
+  {
+    "id": 9,
+    "title": "Killer Cod",
+    "image": "9.png",
+    "rating": 10,
+    "genre": "Horror"
+  },
+  {
+    "id": 10,
+    "title": "The Bearded Fish",
+    "image": "10.png",
+    "rating": 1,
+    "genre": "Adventure"
+  },
+  {
+    "id": 11,
+    "title": "Mermaid's Echo",
+    "image": "11.png",
+    "rating": 2,
+    "genre": "Comedy"
+  },
+  {
+    "id": 12,
+    "title": "Tide Troubles",
+    "image": "12.png",
+    "rating": 3,
+    "genre": "Adventure"
+  },
+  {
+    "id": 13,
+    "title": "Sailor's Fable",
+    "image": "13.png",
+    "rating": 4,
+    "genre": "Comedy"
+  },
+  {
+    "id": 14,
+    "title": "Guppy's Quest",
+    "image": "14.png",
+    "rating": 5,
+    "genre": "Adventure"
+  },
+  {
+    "id": 15,
+    "title": "Shark Shadows",
+    "image": "15.png",
+    "rating": 6,
+    "genre": "Comedy"
+  },
+  {
+    "id": 16,
+    "title": "Terry the Sea-Turtle",
+    "image": "16.png",
+    "rating": 7,
+    "genre": "Adventure"
+  },
+  {
+    "id": 17,
+    "title": "Clownfish College",
+    "image": "17.png",
+    "rating": 8,
+    "genre": "Comedy"
+  },
+  {
+    "id": 18,
+    "title": "Starfish Saga",
+    "image": "18.png",
+    "rating": 9,
+    "genre": "Adventure"
+  },
+  {
+    "id": 19,
+    "title": "Turtle's Trial",
+    "image": "19.png",
+    "rating": 10,
+    "genre": "Comedy"
+  },
+  {
+    "id": 20,
+    "title": "Guardians of Twilight",
+    "image": "20.png",
+    "rating": 1,
+    "genre": "Adventure"
+  }
+]
