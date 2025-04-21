@@ -14,7 +14,7 @@ const getMovieRating = (movie) => {
   }
 };
 
-export default function FishTile({ movie }) {
+export default function FishTile({ movie, isWatchlisted, toggleWatchlist }) {
   return (
     <div className="movie-card" key={movie.id}>
       <img
@@ -27,6 +27,17 @@ export default function FishTile({ movie }) {
       <span className={`movie-card-rating ${getMovieRating(movie)}`}>
         {movie.rating}
       </span>
+      <div>
+        <label className="label">
+          Watchlist?
+          <input
+            className="checkbox"
+            type="checkbox"
+            checked={isWatchlisted}
+            onChange={() => toggleWatchlist(movie.id)}
+          ></input>
+        </label>
+      </div>
     </div>
   );
 }

@@ -6,17 +6,19 @@
 }
 
 body {
-  background: linear-gradient(to top, #002f4b, #005f73);
-  color: #ffffff;
-  min-height: 100vh;
-  padding: 20px;
+  background-image: url("/public/water.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }
 
 .title {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: #a8dadc;
+  color: #ffffff;
   text-shadow: 2px 2px 4px #000;
   margin-bottom: 20px;
 }
@@ -34,14 +36,15 @@ body {
   flex-wrap: wrap;
 }
 
-/* Genre Label + Select */
 .genre-label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 8px; /* 👈 adds spacing between "Genre" and the dropdown */
-  color: #ade8f4;
-  font-size: 1rem;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
 }
 
 select {
@@ -85,6 +88,7 @@ select:focus {
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
   padding-top: 10px;
+  padding-inline: 10px;
 }
 
 .movie-card {
@@ -144,4 +148,31 @@ select:focus {
 .rating-bad {
   background-color: #e63946;
   color: #fff;
+}
+
+.nav-button {
+  display: inline-block;
+  background-color: #e3e6e7;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+.label {
+  color: #ade8f4;
+}
+
+.checkbox {
+  margin-left: 8px;
 }
