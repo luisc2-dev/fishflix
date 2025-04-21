@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "./styles.css";
-import FishTile from "./components/FishTile";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import FishGrid from "./components/FishGrid";

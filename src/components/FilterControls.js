@@ -3,6 +3,8 @@ export default function FilterControls({
   onSearchChange,
   genre,
   onGenreChange,
+  movieRating,
+  onMovieRatingChange,
 }) {
   return (
     <div className="controls">
@@ -14,6 +16,15 @@ export default function FilterControls({
             <option>Comedy</option>
             <option>Adventure</option>
             <option>Horror</option>
+          </select>
+        </label>
+        <label className="genre-label">
+          Rating
+          <select value={movieRating} onChange={onMovieRatingChange}>
+            <option>All</option>
+            <option>Good</option>
+            <option>Ok</option>
+            <option>Bad</option>
           </select>
         </label>
         <input

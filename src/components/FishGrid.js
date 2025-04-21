@@ -6,6 +6,7 @@ import FilterControls from "./FilterControls";
 export default function FishGrid({ movies, watchlist, toggleWatchlist }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [genre, setGenre] = useState("All");
+  const [movieRating, setMovieRating] = useState("All");
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
@@ -13,6 +14,23 @@ export default function FishGrid({ movies, watchlist, toggleWatchlist }) {
 
   const handleGenreChange = (e) => {
     setGenre(e.target.value);
+  };
+
+  const handleMovieRatingChange = (e) => {
+    setMovieRating(e.target.value);
+    console.log(movieRating);
+  };
+
+  const getMovieRating = (movie) => {
+    if (movie.rating < 5) {
+      return "Bad";
+    }
+    if (movie.rating >= 5 && movie.rating < 7) {
+      return "Ok";
+    }
+    if (movie.rating > 7) {
+      return "Good";
+    }
   };
 
   const matchesSearchTerm = (movie, searchTerm) => {
@@ -23,9 +41,15 @@ export default function FishGrid({ movies, watchlist, toggleWatchlist }) {
     return genre === "All" || movie.genre === genre;
   };
 
+  const matchesMovieRating = (movie, movieRating) => {
+    return movieRating === "All" || getMovieRating(movie) === movieRating;
+  };
+
   const filteredMovies = movies.filter(
     (movie) =>
-      matchesSearchTerm(movie, searchTerm) && matchesGenre(movie, genre)
+      matchesSearchTerm(movie, searchTerm) &&
+      matchesGenre(movie, genre) &&
+      matchesMovieRating(movie, movieRating)
   );
 
   return (
@@ -35,6 +59,8 @@ export default function FishGrid({ movies, watchlist, toggleWatchlist }) {
         genre={genre}
         onGenreChange={handleGenreChange}
         onSearchChange={handleSearchChange}
+        movieRating={movieRating}
+        onMovieRatingChange={handleMovieRatingChange}
       ></FilterControls>
       <div className="movie-grid">
         {filteredMovies.map((movie) => (
